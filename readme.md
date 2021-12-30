@@ -5,7 +5,7 @@ A *GUI* version that includes the main literary Chinese textual dating features 
 * Run `textimator.py filename.txt` for any plain text file in `primary_sources`
 * The diachronic lexeme database is required for most purposes, see [Setting up the database](#dbsetup)
 
-## Settings {#settings}
+## Settings{#settings}
 * `textimator.py` uses the settings given in `settings_single` in `modules.settings3`. These settings can be modified when necessary. 
 	* `MinGram`: The minimum number of characters in considered words (e. g. 1 or 2)
 	* `MaxGram`: The maximum number of characters in considered words (e. g. 3 or 4)
