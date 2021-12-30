@@ -41,6 +41,10 @@ initialize_logger("corpusgrams_textchroncat3.log")
 # CAUTION ALWAYS CHECK IF SETTINGS ARE CORRESPONDING TO CORPUS!
 ###########################################################
 
+############################
+# HDC corpus settings
+############################
+
 # settings = {'BaseChronon': -700, # adjust to model / or improve runtime performance by reducing chronon space
 # 			'LastChronon': 1900,
 # 			'Punctuation': False, # will load HYDCD Word list accordingly
@@ -62,88 +66,58 @@ initialize_logger("corpusgrams_textchroncat3.log")
 #  			'ModelType': 'chronons'
 #  			}
 
-# settings = {'BaseChronon': 1475,
-# 			'LastChronon': 1875,
-# 			'Punctuation': False, # will load HYDCD Word list accordingly
-#  			'MinGram': 1,  # will consider grams of minimum length n
-#  			'MaxGram': 1, # will consider grams of maximum length n
-#  			'LookupMinimumNgramCount': 1, # minimum absolute token frequency for consideration
-#  			'FreqListLength': 1,
-#  			'Exclude': True,
-#  			# 'Sample': 'results/chronon_observations_difangzhi-gramswords_1to2_20201127-115439.csv', # this was chronon training corpus no. 5
-#  			# 'Sample': 'results/chronon_observations_difangzhi-gramsexclude_words_1to2_20191130-183313.csv', # this was chronon training corpus no. 3
-#  			# 'Sample': 'results/chronon_observations_difangzhi-gramsgrams_1to2_20201128-075203.csv', # chronon training corpus no. 6
-#  			# 'Sample': 'results/chronon_observations_difangzhi-gramswords_1to2_20201128-201735.csv', # no. 7
-#  			# 'Sample': 'results/chronon_observations_difangzhi-gramswords_1to2_20201129-183117.csv', # no. 8 with log2
-#  			# 'Sample': 'results/chronon_observations_difangzhi-gramswords_1to2_20201201-101135.csv', # no. 9 with log2 and grams
-#  			# 'Sample': 'results/chronon_observations_difangzhi-gramswords_1to2_20201201-184624.csv', # no. 10 has log 10 and words only
-#  			'Sample': 'results/chronon_observations_difangzhi-gramswords_1to2_20201205-114042.csv', # no 12, uses full word list
-#  			# 'Sample': 200, # how many texts 
-#  			'Even': False, # True = use language model with equal amount of chronon dimensions 
-#  			'ChrononDuration': 50, # model timespan of chronon
-#  			'UseCBDB': False,
-#  			'UseCBDBPlaces': False, 
-#  			'UseTimeExpr': False,
-#  			'HYDCDStandardize': False,
-#  			'SmoothingMethod': False,
-#  			'SmoothingParameter': 0.5,
-# 			'ChrononPath': 'hydcd/chronons_dfz_12_time/',
-# 			'ModelType': 'chronons'
-#  			} 	
-
-# settings = {'BaseChronon': 1475, # will save performance values here (0, 1500)
-# 			'LastChronon': 1875,
-# 			'Punctuation': False, # will load HYDCD Word list accordingly
-#  			'MinGram': 1,  # will consider grams of minimum length n
-#  			'MaxGram': 2, # will consider grams of maximum length n
-#  			'LookupMinimumNgramCount': 1, # minimum absolute token frequency for consideration
-#  			'FreqListLength': 1,
-#  			'Exclude': True,
-#  			'Sample': 'results/chronon_observations_difangzhi-gramswords_1to2_20201205-114042.csv', # no 12, uses full word list
-#  		    # 'Sample': 'results/chronon_observations_difangzhi-gramscodat_difangzhi_12_timewords_1to2_20210414-162905.csv', # has a 2 text text 
-#  			# 'Sample': 'results/chronon_observations_difangzhi-gramscodat_difangzhi_12_time_newidfwords_1to2_20210415-202032.csv', #5
-#  			'Even': False, # True = use language model with equal amount of chronon dimensions 
-#  			'ChrononDuration': 50, # model timespan of chronon
-#  			'UseCBDB': False,
-#  			'UseCBDBPlaces': False, 
-#  			'UseTimeExpr': False,
-#  			'HYDCDStandardize': False,
-#  			'SmoothingMethod': False,
-#  			'SmoothingParameter': 0.5,
-# 			# 'ChrononPath': 'hydcd/chronons_difangzhi_12_time_2021/',
-# 			# 'ChrononPath': 'hydcd/chronons_difangzhi_12_time_2021_consnorm_uninot/',
-# 			'ChrononPath': 'hydcd/chronons_difangzhi_tfidftest_12/',
-# 			# 'ChrononPath': 'hydcd/codat_dfz_12_time/',
-# 			'ModelType': 'chronon' 
-# 			# ModelType': 'document'
-#  			}
-
 ############################
-# XXSKQS Chronon settings
+# Difangzhi Chronon settings
 ############################
 
-settings = {'BaseChronon': 1475, 
+settings = {'BaseChronon': 1475,
 			'LastChronon': 1875,
-			'Punctuation': True, # will load HYDCD Word list accordingly
+			'Punctuation': False, # will load HYDCD Word list accordingly
  			'MinGram': 1,  # will consider grams of minimum length n
  			'MaxGram': 2, # will consider grams of maximum length n
  			'LookupMinimumNgramCount': 1, # minimum absolute token frequency for consideration
  			'FreqListLength': 1,
  			'Exclude': True,
- 			#'Sample': 'results/chronon_observations_xx-skqs-gramschronons_allquotes_12_timewords_1to2_20210120-121312.csv', # this is from HDC-corpus experiment
- 			'Sample': 'results/chronon_observations_xx-skqs-gramschronons_xxskqs_12_times_normwords_1to2_addyuanshan.csv', # use a new sample, but include Yuanshan!
- 			# 'Sample': 216, # make above sample, only 5 for 1675 and 2 for 1475
+ 			'Sample': 'results/sample_dfz216.csv', 
+ 			# 'Sample': 200, # how many texts 
  			'Even': False, # True = use language model with equal amount of chronon dimensions 
  			'ChrononDuration': 50, # model timespan of chronon
- 			'UseCBDB': True,
+ 			'UseCBDB': False,
  			'UseCBDBPlaces': False, 
  			'UseTimeExpr': True,
- 			'HYDCDStandardize': True,
+ 			'HYDCDStandardize': False,
  			'SmoothingMethod': False,
  			'SmoothingParameter': 0.5,
-			'ChrononPath': 'hydcd/chronons_xxskqs_12_times_norm/',
-			'ModelType': 'chronon' # ModelType': 'document'
+			'ChrononPath': 'hydcd/chronons_dfz_times_12_orig/',
+			'ModelType': 'chronon'
  			} 	
+
+############################
+# XXSKQS Chronon settings
+############################
+
+# settings = {'BaseChronon': 1475, 
+# 			'LastChronon': 1875,
+# 			'Punctuation': True, # will load HYDCD Word list accordingly
+#  			'MinGram': 1,  # will consider grams of minimum length n
+#  			'MaxGram': 2, # will consider grams of maximum length n
+#  			'LookupMinimumNgramCount': 1, # minimum absolute token frequency for consideration
+#  			'FreqListLength': 1,
+#  			'Exclude': True,
+#  			'Sample': 'results/chronon_observations_xx-skqs-gramschronons_allquotes_12_timewords_1to2_20210120-121312.csv', # this is from HDC-corpus experiment
+#  			# 'Sample': 'results/chronon_observations_xx-skqs-gramschronons_xxskqs_12_times_normwords_1to2_addyuanshan.csv', # use a new sample, but include Yuanshan!
+#  			# 'Sample': 216, # make above sample, only 5 for 1675 and 2 for 1475
+#  			'Even': False, # True = use language model with equal amount of chronon dimensions 
+#  			'ChrononDuration': 50, # model timespan of chronon
+#  			'UseCBDB': True,
+#  			'UseCBDBPlaces': False, 
+#  			'UseTimeExpr': True,
+#  			'HYDCDStandardize': True,
+#  			'SmoothingMethod': False,
+#  			'SmoothingParameter': 0.5,
+# 			'ChrononPath': 'hydcd/chronons_xxskqs_12_times_norm/',
+# 			'ModelType': 'chronon' # ModelType': 'document'
+#  			} 	
 
 ############################
 # XXSKQS Co-dating settings
@@ -198,17 +172,21 @@ except:
 # Check if there's something to exclude from the language model training data
 if settings['Exclude']:
 	metadatafiles, metadata = sorted(glob.glob(settings['ChrononPath'] + 'meta*.csv')), []
-	logging.info("🐍 Checking corpus sources from training data for %s chronons." % (len(metadatafiles)))
+	if len(metadatafiles) > 0:
+		logging.info("🐍 Checking corpus sources from training data for %s chronons." % (len(metadatafiles)))
+	else:
+		logging.warning("❌ No suitable data available in given corpus path %s. Aborting." % (settings['ChrononPath']))
+		exit()
 	for filename in metadatafiles:
 		chronon_metadata = pd.read_csv(filename, index_col='dc_identifier') # get meta data
 		metadata.append(chronon_metadata)
 	metadata = pd.concat(metadata)
 	metadata = metadata[~metadata.index.duplicated(keep='first')]
-	# corpus = CAGrams('difangzhi-grams', 'difangzhi-metadata.xlsx', settings['Sample'], exclude = metadata.index, minchronon = settings['BaseChronon'])
-	corpus = CAGrams('xx-skqs-grams', 'xuxiu_metadata_year.xlsx', settings['Sample'], exclude = metadata.index, minchronon = settings['BaseChronon'])
+	corpus = CAGrams('difangzhi-grams', 'difangzhi-metadata.xlsx', settings['Sample'], exclude = metadata.index, minchronon = settings['BaseChronon'])
+	# corpus = CAGrams('xx-skqs-grams', 'xuxiu_metadata_year.xlsx', settings['Sample'], exclude = metadata.index, minchronon = settings['BaseChronon'])
 else:
-	# corpus = CAGrams('difangzhi-grams', 'difangzhi-metadata.xlsx', settings['Sample'], minchronon = settings['BaseChronon'])
-	corpus = CAGrams('xx-skqs-grams', 'xuxiu_metadata_year.xlsx', settings['Sample'])
+	corpus = CAGrams('difangzhi-grams', 'difangzhi-metadata.xlsx', settings['Sample'], minchronon = settings['BaseChronon'])
+	# corpus = CAGrams('xx-skqs-grams', 'xuxiu_metadata_year.xlsx', settings['Sample'])
 	# corpus = CAGrams('zhengshi-grams', 'zhengshi-metadata.xlsx', settings['Sample'])
 	logging.info("🐼 Got metadata for %s texts, sample: %s" % ((len(corpus.sample)), settings['Sample']))
 

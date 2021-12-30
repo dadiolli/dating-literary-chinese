@@ -21,11 +21,12 @@ settings = {'Chronon': 50,
 			'MinGram': 1,
 			'MaxGram': 2,
 			'Punctuation': False,
-			'OriginalCorpus': 'hydcd/chronons_xxskqs_12_times_norm_old', #'hydcd/codat_xxskqs_12_names_time_norm', # use this corpus for text selection
-			'UseCBDB': True,
+			# 'OriginalCorpus': 'hydcd/chronons_xxskqs_12_times_norm_old', #'hydcd/codat_xxskqs_12_names_time_norm', # use this corpus for text selection
+			'OriginalCorpus': '../hydcd2017/hydcd/chronons_difangzhi_tfidftest_12', 
+			'UseCBDB': False,
 			'UseCBDBPlaces': False,
 			'UseTimeExpr': True,
-			'HYDCDStandardize': True,
+			'HYDCDStandardize': False,
 			'SmoothingMethod': False, # 'laplace' # 'neighbour'
 			#'AllUnigrams': True
 			'ModelType': 'chronon'
@@ -63,12 +64,12 @@ if args.grams: do.append('grams')
 # Other options
 ###########################################################
 
-# corpus = CAGrams('difangzhi-grams', 'difangzhi-metadata.xlsx', minchronon = settings['HistoryStart'])
-# corpuspath = 'primary_sources/difangzhi-grams'
-# chrononpath = 'hydcd/chronons_difangzhi_tfidftest_12_oneplusidf'
-corpus = CAGrams('xx-skqs-grams', 'xuxiu_metadata_year.xlsx', minchronon = settings['HistoryStart'])
-corpuspath = 'primary_sources/xx-skqs-grams'
-chrononpath = "hydcd/chronons_xxskqs_12_times_norm"
+corpus = CAGrams('difangzhi-grams', 'difangzhi-metadata.xlsx', minchronon = settings['HistoryStart'])
+corpuspath = 'primary_sources/difangzhi-grams'
+chrononpath = 'hydcd/chronons_dfz_times_12_orig'
+# corpus = CAGrams('xx-skqs-grams', 'xuxiu_metadata_year.xlsx', minchronon = settings['HistoryStart'])
+# corpuspath = 'primary_sources/xx-skqs-grams'
+# chrononpath = "hydcd/chronons_xxskqs_12_times_norm"
 try:
 	os.makedirs(chrononpath)
 except:

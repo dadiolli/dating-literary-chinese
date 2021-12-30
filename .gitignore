@@ -1,4 +1,5 @@
 # Exclude files because of their large size or third party rights
+files
 hydcd/hanyudacidian.txt
 hydcd/chronons_*
 hydcd/codat_*
