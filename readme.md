@@ -3,9 +3,9 @@ A *GUI* version that includes the main literary Chinese textual dating features 
 
 # (Basic) usage in Terminal / console
 * Run `textimator.py filename.txt` for any plain text file in `primary_sources`
-* The diachronic lexeme database is required for most purposes, see [Setting up the database](#dbsetup)
+* The diachronic lexeme database is required for most purposes, see [Setting up the database](#Setting-up-the-database)
 
-## Settings{#settings}
+## Settings
 * `textimator.py` uses the settings given in `settings_single` in `modules.settings3`. These settings can be modified when necessary. 
 	* `MinGram`: The minimum number of characters in considered words (e. g. 1 or 2)
 	* `MaxGram`: The maximum number of characters in considered words (e. g. 3 or 4)
@@ -27,7 +27,7 @@ A *GUI* version that includes the main literary Chinese textual dating features 
 	* `ChrononPath`: Path to a statistical language model in `hydcd` folder. Included model `chronons_allquotes_12_time` was generated from the *HYDCD* quotations
 	* `UseTimeExpr`: Defaults to `True`. Decides if you want to consider temporal expressions in the input text.
 
-# Setting up the database {#dbsetup}
+# Setting up the database
 * A MariaDB / mySQL database is required
 * The DB connection needs to be configured in `config` in `modules/toolbox3.py`
 * Creating the database from scratch requires an UTF-8 plain text version of Hanyu da cidian (HYDCD) 漢語大辭典 / follow the steps described in [Creating a diachronic lexeme database based on the HYDCD from scratch](#dbfromscratch) to do so. 
@@ -60,7 +60,7 @@ A *GUI* version that includes the main literary Chinese textual dating features 
 	* -e calculate *Temporal Entropy* (TE) 
 
 ## Using language models
-* `catchron_corpus.py` is used to assign timestamps to a corpus of texts. [Settings](#settings) should match the settings used when training the model.
+* `catchron_corpus.py` is used to assign timestamps to a corpus of texts. [Settings](#Settings) should match the settings used when training the model.
 
 ## Training and using lexicographic methods
 * `corpusgrams_textimator.py` generates temporal statistics based on the diachronic lexicalization observed in a given input corpus text selection.
