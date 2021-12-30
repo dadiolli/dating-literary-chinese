@@ -1,0 +1,17 @@
+CBDB is used throughout the project for
+* improving biographical / bibliographical data gained from HDC 
+* creation of place name / person name lists
+
+A current version of the SQLite version of CBDB can be obtained from
+https://projects.iq.harvard.edu/cbdb/download-cbdb-standalone-database
+
+Export the following tables and convert to mySQL using sqliteconvert.pl method.
+* addresses > place names 
+* altname_codes > types of bieming 別名
+* altname_data > bieming 別名 information, zi 字，hao 號 etc. alternate names for persons from biog_main
+* biog_main
+* text_codes
+* text_data
+
+Otherwise, use pre-converted versions from the 2016 version of CBDB.
+

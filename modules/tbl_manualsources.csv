@@ -1,0 +1,57 @@
+clearbook,cbdb_text_id,title_py,title_western,startyear,endyear,dynasty,estimate,usecount,source,author
+後汉书,,Hou Han Shu,Book of Later Han,400,500,南朝宋,1,8901,MANUAL,范晔
+汉书,,Han Shu,Book of Han,111,111,汉,0,7655,MANUAL,班固
+史记,,Shi Ji,Records of the Grand Historian,-94,-94,汉,0,7039,MANUAL,司马迁
+文选,,Wen Xuan,Selections of Refined Literature,520,530,南朝梁,0,4916,MANUAL,萧统
+左传,,Zuo zhuan,Commentary of Zuo,-500,-400,战国,1,4463,MANUAL,左丘明
+晋书,,Jin Shu,Book of Jin,648,648,唐,0,4271,MANUAL,房乔
+新唐书,,Xin Tang Shu,New Book of Tang,1060,1060,宋,0,4269,MANUAL,欧阳修
+诗,,Shi Jing,Classic of Poetry,-1100,-700,战国,1,4093,MANUAL,
+礼记,,Li Ji,Book of Rites,-400,-300,战国,1,4004,MANUAL,
+三国志,,Sanguo Zhi,Records of the Three Kingdoms,280,297,战国,1,3505,MANUAL,陈寿
+周礼,,Zhou Li,Rites of Zhou,-150,23,汉,1,3277,MANUAL,
+书,,Shang Shu,Book of Documents,-1100,-300,战国,1,2811,MANUAL,
+庄子,,Zhuang Zi,Zhuangzi,-400,-200,战国,1,2685,MANUAL,庄周
+管子,,Guan Zi,Guanzi,-720,-645,战国,1,2670,MANUAL,管仲
+宋书,,Song Shu,Book of Song,492,493,南朝齐,0,2327,MANUAL,沈约
+红楼梦,,Hong Lou Meng,Dream of the Red Chamber,1730,1764,唐,1,2269,MANUAL,曹雪芹
+宋史,,Song Shi,History of Song,1343,1343,元,0,2045,MANUAL,脱脱
+水浒传,,Shui Hu Zhuan,Water Margin,1320,1372,元,1,2011,MANUAL,施耐庵
+楚辞,,Chu Ci,Chu Ci,-329,-278,战国,1,1886,MANUAL,屈原
+淮南子,,Huainanzi,Huainanzi,-139,-139,汉,0,1797,MANUAL,刘安
+荀子,,Xunzi,Xunzi,-300,-238,战国,1,1755,MANUAL,荀況
+国语,,Guoyu,Discourses of the States,-500,-300,战国,1,1748,MANUAL,
+南史,,Nan Shi,History of the Southern Dynasties,643,659,唐,1,1721,MANUAL,李大师
+魏书,,Wei Shu,Book of Wei,551,554,南朝梁,1,1700,MANUAL,魏收
+韩非子,,Han Fei Zi,Hanfeizi,-350,-350,战国,1,1615,MANUAL,韩非
+易,,Yijing,Classic of Changes,-850,-800,战国,1,1611,MANUAL,
+抱朴子,,Baopuzi,Baopuzi,265,420,晋,1,1509,MANUAL,葛洪
+旧唐书,,Jiu Tang Shu,Old Book of Tang,945,945,五代,0,1471,MANUAL,
+儿女英雄传,,Ernü Yingxiong Zhuan,The Story of Hero Boys and Hero Girls,1878,1878,清,0,1465,MANUAL,燕北闲人
+论衡,,Lun Heng,,80,80,汉,0,1381,MANUAL,王充
+战国策,,Zhanguo Ce,Strategies of the Warring States,-360,-284,战国,1,1289,MANUAL,苏秦
+吕氏春秋,,Lüshi Chunqiu,,-239,-239,战国,1,1191,MANUAL,吕不韦
+孟子,,Mengzi,Mengzi,-330,-300,战国,1,1177,MANUAL,孟子
+论语,,Lunyu,Analects,-475,-221,战国,1,1165,MANUAL,
+北史,,Bei Shi,History of the Northern Dynasties,643,659,唐,0,1143,MANUAL,李大师
+聊斋志异,,Liaozhai Zhiyi,Strange Stories from a Chinese Studio,1740,1740,清,0,1127,MANUAL,蒲松龄
+南齐书,,Nan Qi Shu,Book of Southern Qi,509,537,,1,1068,MANUAL,萧子显
+中国农村的社会主义高潮,,Zhongguo Nongcun de Shehui Zhuyi Gaochao,,1956,1956,,0,122,MANUAL,
+儒林外史,,Rulin Waishi,,1749,1749,,0,,MANUAL,
+说文解字,,Shuowen Jiezi,,121,121,汉,1,,MANUAL,许慎
+说文,,Shuowen Jiezi,,121,121,汉,1,,MANUAL,许慎
+鹖冠子,,Heguanzi,Master Pheasant Cap,-500,-221,战国,1,,MANUAL,
+陈书,,Chen Shu,,636,636,唐,0,,MANUAL,姚思廉
+北齐书,,Bei Qi Shu,,636,636,唐,0,,MANUAL,李百药
+周书,,Zhou Shu,,636,636,唐,0,,MANUAL,令狐德棻
+旧五代史,,Jiu Wudai Shi,,974,974,,0,,MANUAL,薛居正
+新五代史,,Xin Wudai Shi,,1039,1039,,0,,MANUAL,欧阳修
+九章算术,,Jiuzhang Suanshu,,1,100,汉,1,,MANUAL,
+列子,,Liezi,,-450,-400,战国,1,,MANUAL,列圄寇
+商君书,,Shanghunshu,,-390,-338,战国,1,,MANUAL,商鞅
+孔子家语,,Kongzi Jiayu,,-165,-165,汉,1,,MANUAL,
+山海经,,Shanhai Jing,,-400,-300,,1,,MANUAL,
+慎子,,Shenzi,,-350,-275,,1,,MANUAL,
+竹书纪年,,Zhushu Jinian,Bamboo Annals ,-299,-296,,1,,MANUAL,
+逸周书,,Yizhou Shu,,-400,-100,,1,,MANUAL,
+清史稿,,Qing Shi Gao,Draft History of thr Qing,1928,1928,民国,0,,MANUAL,赵尔巽

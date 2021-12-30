@@ -1,0 +1,24 @@
+# Exclude files because of their large size or third party rights
+hydcd/hanyudacidian.txt
+hydcd/chronons_*
+hydcd/codat_*
+primary_sources/check_cbdb_unique_names.txt
+primary_sources/trainer_filemapping_test.csv
+primary_sources/loewe-corpus
+primary_sources/qingshigao.txt
+primary_sources/zhengshi-grams
+primary_sources/zhengshi2-corpus
+primary_sources/xx-skqs-grams/*gram/
+primary_sources/difangzhi-grams/*gram/
+sql/*.sql
+sql/cbdb/*.sql
+results/textimator*
+results/20*
+results/check*
+results/chronon*.csv
+results/*.xlsx
+results/*.pdf
+temp.ipynb
+logs/*.log
+*.pyc
+__pycache__
