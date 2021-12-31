@@ -62,7 +62,7 @@ initialize_logger("corpusgrams_textchroncat3.log")
 #  			'HYDCDStandardize': False,
 #  			'SmoothingMethod': False,
 #  			'SmoothingParameter': 0.01, 
-#  			'ChrononPath': 'hydcd/chronons_allquotes_12_time/', # chrononpath = 'hydcd/chronons_allquotes_14_time/'
+#  			'ChrononPath': 'models/chronons_allquotes_12_time/', # chrononpath = 'models/chronons_allquotes_14_time/'
 #  			'ModelType': 'chronons'
 #  			}
 
@@ -88,7 +88,7 @@ settings = {'BaseChronon': 1475,
  			'HYDCDStandardize': False,
  			'SmoothingMethod': False,
  			'SmoothingParameter': 0.5,
-			'ChrononPath': 'hydcd/chronons_dfz_times_12_orig/',
+			'ChrononPath': 'models/chronons_dfz_times_12_orig/',
 			'ModelType': 'chronon'
  			} 	
 
@@ -115,7 +115,7 @@ settings = {'BaseChronon': 1475,
 #  			'HYDCDStandardize': True,
 #  			'SmoothingMethod': False,
 #  			'SmoothingParameter': 0.5,
-# 			'ChrononPath': 'hydcd/chronons_xxskqs_12_times_norm/',
+# 			'ChrononPath': 'models/chronons_xxskqs_12_times_norm/',
 # 			'ModelType': 'chronon' # ModelType': 'document'
 #  			} 	
 
@@ -140,7 +140,7 @@ settings = {'BaseChronon': 1475,
 #  			'HYDCDStandardize': True,
 #  			'SmoothingMethod': False,
 #  			'SmoothingParameter': 0.5,
-# 			'ChrononPath': 'hydcd/codat_xxskqs_12_names_time_norm/',
+# 			'ChrononPath': 'models/codat_xxskqs_12_names_time_norm/',
 # 			'ModelType': 'document' 
 #  			} 			
 
@@ -166,8 +166,6 @@ except:
 ###########################################################
 # get a path we want to analyze
 ###########################################################
-
-# chrononpath = 'hydcd/chronons_nozhengshi/' if settings['Exclude'] else 'hydcd/chronons_allquotes/'
 
 # Check if there's something to exclude from the language model training data
 if settings['Exclude']:

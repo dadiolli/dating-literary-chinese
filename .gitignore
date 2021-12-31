@@ -1,8 +1,8 @@
 # Exclude files because of their large size or third party rights
 files
 hydcd/hanyudacidian.txt
-hydcd/chronons_*
-hydcd/codat_*
+models/chronons_*
+models/codat_*
 primary_sources/check_cbdb_unique_names.txt
 primary_sources/trainer_filemapping_test.csv
 primary_sources/loewe-corpus

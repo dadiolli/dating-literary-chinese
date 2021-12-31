@@ -31,8 +31,8 @@ args, do = parser.parse_args(), []
 
 excluded_books = []
 # excluded_books = ['史记', '汉书', '三国志', '後汉书', '宋书', '南齐书', '魏书', '梁书', '陈书', '北齐书', '周书', '隋书', '晋书', '南史', '北史', '旧唐书', '旧五代史', '新五代史', '新唐书', '宋史', '金史', '辽史', '元史', '明史', '清史稿']
-chrononpath = "hydcd/chronons_allquotes/"
-# chrononpath = "hydcd/chronons_nozhengshi"
+chrononpath = "models/chronons_allquotes/"
+# chrononpath = "models/chronons_nozhengshi"
 
 ###########################################################
 # Build chronons

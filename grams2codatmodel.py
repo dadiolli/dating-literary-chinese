@@ -21,8 +21,8 @@ settings = {'Chronon': 50,
 			'MinGram': 1,
 			'MaxGram': 2,
 			'Punctuation': False,
-			'OriginalCorpus': 'hydcd/chronons_xxskqs_12_times_norm_old', # use this corpus for text selection
-			# 'OriginalCorpus': 'hydcd/chronons_difangzhi_12', # use this corpus for text selection
+			'OriginalCorpus': 'models/chronons_xxskqs_12_times_norm_old', # use this corpus for text selection
+			# 'OriginalCorpus': 'models/chronons_difangzhi_12', # use this corpus for text selection
 			'UseCBDB': True,
 			'UseCBDBPlaces': False,
 			'UseTimeExpr': True,
@@ -68,7 +68,7 @@ if args.grams: do.append('grams')
 # corpuspath = 'primary_sources/difangzhi-grams'
 corpus = CAGrams('xx-skqs-grams', 'xuxiu_metadata_year.xlsx', minchronon = settings['HistoryStart'])
 corpuspath = 'primary_sources/xx-skqs-grams'
-chrononpath = "hydcd/chronons_xxskqs_12_times_norm"
+chrononpath = "models/chronons_xxskqs_12_times_norm"
 try:
 	os.makedirs(chrononpath)
 except:

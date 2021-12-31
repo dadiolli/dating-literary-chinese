@@ -24,9 +24,9 @@ from modules.initialize_logger3 import *
 
 
 # DFZ 216 test run
-# settings['Sample'] = '../hydcd2017/results/guidefuzhi_example.csv' # example
-settings['Sample'] = '../hydcd2017/results/chronon_observations_difangzhi-gramswords_1to2_20201205-114042.csv' # DFZ216
-exclude_file = '../hydcd2017/results/dfz_training_432.csv' # training for AYL model
+# settings['Sample'] = 'results/guidefuzhi_example.csv' # example
+settings['Sample'] = 'results/sample_dfz216.csv' # DFZ216
+exclude_file = 'results/dfz_training_432.csv' # training for AYL model
 exclude_meta = pd.read_csv(exclude_file, index_col='filename') # get meta data
 corpus = CAGrams('difangzhi-grams', 'difangzhi-metadata.xlsx', settings['Sample'], exclude = exclude_meta.index, minchronon = -700)
 
@@ -45,19 +45,10 @@ corpus = CAGrams('difangzhi-grams', 'difangzhi-metadata.xlsx', settings['Sample'
 # settings['Sample'] = 73
 # corpus = PlainTextCorpus('combined2-corpus', 'primary_sources/combined2-corpus')
 
-
 # XXSKQS
 # Version mit 105 Texten # settings['Sample'] = 'results/chronon_observations_xx-skqs-gramschronons_allquotes_12_timewords_1to2_20210113-163331.csv'
 # settings['Sample'] = '../hydcd2017/results/chronon_observations_xx-skqs-gramschronons_xxskqs_12_times_normwords_1to2_20210726-101039.csv' # 176 Texte (wie in XXSKQS chronon vs. documents)
 # corpus = CAGrams('xx-skqs-grams', 'xuxiu_metadata_year.xlsx', settings['Sample'], minchronon = -700)
-
-# settings['Sample'] = 'results/chronon_observations_difangzhi-gramswords_1to2_20191218-150319_STAGE.csv'
-
-# 2020-06-13 need to run a sample from the training data to check, whether training was meaningful!
-# settings['Sample'] = 'results/dfz_training_testsample100.csv'
-
-# method_description = inspect.getsource(smoothedsimplechroner)
-# logging.debug(str(method_description))
 
 observationfile = 'textimator_observations_' + corpus.name + '_' + str(settings['MinGram']) + 'to' + str(settings['MaxGram'])
 

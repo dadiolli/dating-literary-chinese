@@ -21,7 +21,7 @@ from modules.similarities import cossim, jacsim, nllr, kld
 class ChrononModel():
 	"This is the descriptive container of the temporal language model"
 	def __init__(self, chrononpath, methods, freqfileprefix='even_freq', mode='words'):
-		chrononpath = 'hydcd/' + chrononpath + '/'
+		chrononpath = 'models/' + chrononpath + '/'
 		filenames = sorted(glob.glob(chrononpath + freqfileprefix + mode+"_*.csv"))
 		self.chronons, self.cfreqfiles = [], dict()
 		for csvfile in filenames:
