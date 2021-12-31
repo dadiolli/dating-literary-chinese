@@ -13,7 +13,7 @@ A *GUI* version that includes the main literary Chinese textual dating features 
 	* `UseNonHYDCDEvidence`: Consider extra training data from *zhengshi* 正史 and *Loewe* corpora
 	* `HYDCDStandardize`: Normalize characters in the source text to default variants as given in the *HYDCD*, e. g. 為 will be converted to 爲. This can improve lexeme recognition recall.
 	* `WordFreqListLength`: List of word list lengths for calculation of *Average Year of Lexicalization* (*AYL*). Defaults to \[1\]. Values between 0.01 and 1 will cause a relative amount of the most commonly appearing lexemes of the input text to be used, e. g. 0.05 means 5 %, 1 means 100 %. Values greater than 1 will be interpreted as an absolute number, e. g. 1000 will consider the 1.000 most common lexemes and so on.
-	* `ChrononMethods`: List of statistical methods considered. Leave empty (\[\]) to run lexicographical method(s) only. Available methods are:
+	* `ChrononMethods`: List of statistical methods considered. Leave empty (\[\]) to run lexicographical method(s) only. Available methods are listed below. 	KLD and NLLR will usually yield identical ranking of chronons /documents and therefore identical timestamps as well. 
 		* 'cossim' = Cosine similarity,
 		* 'tfidf' = Term frequency inverse document frequency weighted Cosine similarity,
 		* 'jacsim' = Jaccard similarity,
@@ -22,9 +22,10 @@ A *GUI* version that includes the main literary Chinese textual dating features 
 		* 'nllr' = Normalized Log Likelihood Ratio (NLLR),
 		* 'nllr_te' = Temporal Entropy weighted NLLR,
 		* 'rand' = Select a random chronon / used as baseline
-	* KLD and NLLR will yield identical results
 	* `ChrononModel`: Statistical language model type, defaults to 'words'. If a suitable model is generated, 'grams' can be used instead. This requires much more computing power, memory and is time consuming.
-	* `ChrononPath`: Path to a statistical language model in `hydcd` folder. Included model `chronons_allquotes_12_time` was generated from the *HYDCD* quotations
+	* `ChrononPath`: Path to a statistical language model in `models` folder. Included model `chronons_allquotes_12_time` was generated from the *HYDCD* quotations
+	* `UseCBDB`: Accept names listed in `CBDB` as types for word models. Can be useful e.g. when names of contemporaries are mentioned in training and dating texts
+	* `UseCBDBPlaces`: Accept place names listed in `CBDB` as types for word models. This is discouraged, as place names tend to have very low temporal entropy.
 	* `UseTimeExpr`: Defaults to `True`. Decides if you want to consider temporal expressions in the input text.
 
 # Setting up the database
@@ -106,7 +107,7 @@ A *GUI* version that includes the main literary Chinese textual dating features 
 * db_wordlist
 	* creates txt files of wordlists for quick access 
 	* has two flavors, with and without punctuation
-	* also outputs full list of hydcd entries (even if they have no citation / source data)
+	* also outputs full list of *HYDCD* entries (even if they have no citation / source data)
 
 ## Enhance the diachronic database
 
